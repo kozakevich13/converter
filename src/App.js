@@ -1,14 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Converter from "./components/converter/Converter";
+import Header from "./components/header/Header";
 
-function App() {
+export default function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-      converter
-      </header>
+      <Header/>
+      <Converter/>
     </div>
   );
 }
-
-export default App;

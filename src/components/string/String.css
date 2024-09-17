@@ -1,0 +1,47 @@
+
+.CurrencyString {
+	--border-color: #64748b;
+	--border-focus-color: #34383d;
+	width: 50%;
+	display: flex;
+	font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.font,
+.input,
+.select {
+	font-size: inherit;
+	font-family: inherit;
+	color: inherit;
+	background: #f1f5f9;
+}
+
+.input {
+	width: 70%;
+
+	flex-grow: 1;
+
+	border-radius: 5px 0 0 5px;
+	border: solid 2px var(--border-color);
+	border-right: solid 1px var(--border-color);
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.select {
+	border-radius: 0 5px 5px 0;
+	border: solid 2px var(--border-color);
+	border-left: solid 1px var(--border-color);
+}
+
+.input:focus,
+.select:focus {
+	outline: none;
+	border: solid 2px var(--border-focus-color);
+}
